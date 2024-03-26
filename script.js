@@ -17,7 +17,7 @@ const myFavoriteFootballTeam = {
     {
       name: "ansh",
       position:"code Debugging",
-     phone_number: 1,
+     phone_number: 8795747378,
       isCaptain: false,
       nickname: "code Debugging",
     },
@@ -225,13 +225,13 @@ const { coachName } = myFavoriteFootballTeam.headCoach;
 const setPlayerCards = (arr = players) => {
   playerCards.innerHTML += arr
     .map(
-      ({ name, position, phone_number, isCaptain, nickname }) =>
+      ({ name, position, phone_number, isCaptain}) =>
         `
         <div class="player-card">
           <h2>${name} ${isCaptain ? "(Captain)" : ""}</h2>
           <p>Position: ${position}</p>
           <p>Number: ${phone_number}</p>
-          <p>Nickname: ${nickname !== null ? nickname : "N/A"}</p>
+        
         </div>
       `
     )
